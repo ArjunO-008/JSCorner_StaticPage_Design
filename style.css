@@ -1,0 +1,448 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/home_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #0288d194, #0288d152);
+}
+
+.navbar {
+    width: 100%;
+    height: 15vh;
+    background: #0000004a;
+    display: flex;
+    flex-direction: row;
+    user-select: none;
+}
+
+.logo {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 60px;
+    padding: 30px;
+    color: #fff;
+}
+
+.logo span {
+    color: #000;
+    background: #fff;
+    font-weight: bolder;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px;
+    mix-blend-mode: color-dodge;
+}
+
+.navbtns {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 25px;
+    user-select: none;
+}
+
+.navbar .navlinks {
+    margin: 25px;
+    font-weight: bolder;
+    transition: all 0.2s;
+}
+
+.navlinks {
+    position: relative;
+
+}
+
+.navlinks:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 00%;
+    background: #fff;
+    bottom: -10px;
+    left: 0;
+    transition: 0.2s;
+}
+
+.navlinks:hover {
+    cursor: pointer;
+}
+
+.navlinks:hover::after {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 500;
+    background: #0000004a;
+    padding: 40px;
+}
+
+.textbox {
+    border-left: 6px solid;
+    padding: 15px;
+    position: relative;
+    right: 00;
+
+    animation: intro 3s;
+    animation-iteration-count: unset;
+}
+
+@keyframes intro {
+    from {
+        opacity: 0;
+        right: -500px;
+    }
+
+    to {
+        opacity: 1;
+        right: 0;
+    }
+
+}
+
+.login_main {
+    width: 100%;
+    height: 85vh;
+    display: none;
+    background: #0000004a;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.login_main .logincard {
+    width: 25%;
+    height: 75%;
+    background: #faebd729;
+    border-radius: 25px;
+    border: 1px solid #ffffff3d;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: #fff;
+    opacity: 1;
+    animation: logintro 1s;
+    animation-iteration-count: unset;
+    user-select: none;
+}
+
+.logincard div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px;
+}
+
+.logincard div input {
+    height: 25px;
+    border-radius: 6px;
+    border: 0px;
+    margin-bottom: 15px;
+}
+
+.logincard span button {
+    background: #6e93a445;
+    backdrop-filter: blur(1px);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 5px;
+    border: 1px solid #ffffff6e;
+    border-radius: 11px;
+}
+
+.logincard span button:hover {
+    background: #ffffff30;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.logincard p {
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.logincard p a {
+    text-decoration: none;
+    color: #c9c8c8;
+}
+
+.logincard p a:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.login_main .signupcard {
+    width: 25%;
+    height: 75%;
+    background: #faebd729;
+    border-radius: 25px;
+    border: 1px solid #ffffff3d;
+    backdrop-filter: blur(5px);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    animation: logintro 1s;
+    animation-iteration-count: unset;
+    user-select: none;
+}
+
+.signupcard div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 5px;
+}
+
+.signupcard p {
+    font-size: 14px;
+    font-weight: 100;
+    color: #fff;
+    accent-color: #fff;
+    margin: 5px;
+
+}
+
+.signupcard span {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #fff;
+}
+
+.signupcard div input {
+    height: 25px;
+    border-radius: 6px;
+    border: 0px;
+    margin-bottom: 5px;
+
+}
+
+.signupcard div span {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.signupcard p a {
+    text-decoration: none;
+    color: #c9c8c8;
+}
+
+.signupcard p a:hover {
+    text-decoration: underline;
+    color: #fff;
+    cursor: pointer;
+}
+
+.signupcard span button {
+    background: #6e93a445;
+    backdrop-filter: blur(1px);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 5px;
+    border: 1px solid #ffffff6e;
+    border-radius: 11px;
+    margin: 5px;
+}
+
+.signupcard span button:hover {
+    background: #ffffff30;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+@keyframes logintro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+
+.about {
+    width: 100%;
+    height: 85vh;
+    display: none;
+    background: #0000004a;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .aboutcard {
+    width: 96%;
+    height: 80vh;
+    border: 1px solid #ffffff73;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    background: #ffffff40;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 25px;
+    font-size: 17px;
+    color: #1a1a1a;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    border-top-width: 3px;
+    border-bottom-width: 3px;
+    animation: aboutintro 2.5s;
+    animation-iteration-count: unset;
+}
+
+.aboutcard h3 {
+    font-size: 25px;
+    font-weight: bolder;
+    color: #fff;
+    margin-top: 10px;
+
+}
+
+@keyframes aboutintro {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
+
+.contact {
+    width: 100%;
+    height: 85vh;
+    display: none;
+    background: #0000004a;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .contactcard {
+    width: 96%;
+    height: 80vh;
+    border: 1px solid #ffffff73;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+    background: #ffffff40;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: contactintro 2s;
+    animation-iteration-count: unset;
+}
+
+.contactcard .cardcontent {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.cardcontent span input,
+.cardcontent span button,
+.cardcontent span textarea {
+    width: 100%;
+}
+
+.cardcontent h1 {
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.cardcontent span input,
+.cardcontent span button {
+    height: 25px;
+    border: none;
+    border-radius: 8px
+}
+
+.cardcontent span textarea {
+    border: none;
+    border-radius: 8px
+}
+
+.cardcontent span {
+    color: #fff;
+    margin-top: 7px;
+}
+
+.cardcontent span button {
+    background: #6e93a445;
+    backdrop-filter: blur(2px);
+    color: #fff;
+    font-weight: 600;
+    padding: 5px;
+    border: 1px solid #ffffff6e;
+    border-radius: 11px;
+
+}
+
+.cardcontent span button:hover {
+    background: #ffffff30;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cardcontent div span {
+    width: 500px;
+    height: 500px;
+    background: #fff;
+}
+
+@keyframes contactintro {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
